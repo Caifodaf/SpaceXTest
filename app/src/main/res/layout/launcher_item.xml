@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cl_main_block_launcher_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="16dp"
+    android:background="@drawable/rectangle_rounded_all"
+    android:backgroundTint="@color/grey_light_3"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_icon_mission_item"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/line_center_vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_center_vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.3" />
+
+    <TextView
+        android:id="@+id/tv_title_mission_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/font_semi_bold"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/line_center_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="FalconSat FalconSat FalconSat FalconSat FalconSat"
+        />
+
+    <LinearLayout
+        android:id="@+id/ll_description_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/line_center_vertical"
+        app:layout_constraintTop_toBottomOf="@+id/tv_title_mission_item">
+
+        <TextView
+            android:id="@+id/tv_cores_flight_mission_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_regular"
+            android:textColor="@color/grey_light_text"
+            android:text="@string/cores_flight_launcher_item" />
+
+        <TextView
+            android:id="@+id/tv_success_status_mission_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:fontFamily="@font/font_regular"
+            android:textColor="@color/grey_light_text"
+            android:text="@string/status_failure_launchers_item" />
+
+        <TextView
+            android:id="@+id/tv_date_launce_mission_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_regular"
+            android:textColor="@color/grey_light_text"
+            android:text="@string/date_launch_launcher_item" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

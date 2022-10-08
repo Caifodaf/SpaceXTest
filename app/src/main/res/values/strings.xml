@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SpaceXTest</string>
+    <string name="spacex_launches_main">SpaceX launches</string>
+
+    <string name="status_success_launchers_item">Статус: Успех</string>
+    <string name="status_failure_launchers_item">Статус: Неудача</string>
+    <string name="status_is_unknown_launchers_item">Статус: Неизвестно</string>
+
+    <string name="status_success_launchers_page">Статус миссии: Успех</string>
+    <string name="status_failure_launchers_page">Статус миссии: Неудача</string>
+    <string name="status_is_unknown_launchers_page">Статус миссии: Неизвестно</string>
+
+    <string name="cores_flight_launcher_item">Повторных использований 1 ступени: </string>
+    <string name="date_launch_launcher_item">Дата запуска: </string>
+    <string name="large_text">Following second stage separation, SpaceX performed a test flight which attempted to return the first stage of the Falcon 9 through the atmosphere and land it on an approximately 90-by-50-meter (300 ft x 160 ft) floating platform-called the autonomous spaceport drone ship. Many of the test objectives were achieved, including precision control of the rocket\'s descent to land on the platform at a specific point in the Atlantic ocean, and a large amount of test data was obtained from the first use of grid fin control surfaces used for more precise reentry positioning. The grid fin control system ran out of hydraulic fluid a minute before landing and the landing itself resulted in a crash.</string>
+    <string name="details_page">Детали</string>
+    <string name="cores_flight_page">Количество повторных использований первой ступени</string>
+    <string name="title_crews_page">Экипаж</string>
+    <string name="repeat_btn">Повторить</string>
+    <string name="error_load_page_message">Ошибка загрузки страницы</string>
+    <string name="error_load_list_crews">Ошибка загрузки списка экипажа</string>
+    <string name="all_data_load_message">Все данные загруженны</string>
+</resources>

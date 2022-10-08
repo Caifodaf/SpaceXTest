@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/pageFragment"
+        android:name="ru.android.spacextest.ui.page.PageFragment"
+        android:label="page_fragment"
+        tools:layout="@layout/page_fragment" />
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="ru.android.spacextest.ui.main.MainFragment"
+        android:label="MainFragment"
+        tools:layout="@layout/main_fragment">
+        <action
+            android:id="@+id/action_mainFragment_to_pageFragment"
+            app:destination="@id/pageFragment" />
+    </fragment>
+</navigation>

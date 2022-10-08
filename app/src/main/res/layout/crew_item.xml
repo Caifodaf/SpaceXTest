@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/cl_main_block_crew_item"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rectangle_rounded_all"
+    android:backgroundTint="@color/grey_light_3"
+    android:layout_marginEnd="16dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/iv_crew_avatar_item"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="8dp"
+        android:src="@mipmap/ic_launcher"
+        app:layout_constraintBottom_toTopOf="@id/line_center_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/line_center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.6" />
+
+    <LinearLayout
+        android:id="@+id/ll_content_crew_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp"
+        app:layout_constraintEnd_toEndOf="@id/iv_crew_avatar_item"
+        app:layout_constraintStart_toStartOf="@id/iv_crew_avatar_item"
+        app:layout_constraintTop_toBottomOf="@+id/iv_crew_avatar_item">
+
+        <TextView
+            android:id="@+id/tv_name_crew_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:fontFamily="@font/font_medium"
+            android:lines="2"
+            android:maxLines="2"
+            android:text="Robert Behnken Behnken"
+            android:textColor="@color/black"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_agency_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_medium"
+            android:text="NASA"
+            android:textColor="@color/grey_light_text"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/tv_status_crew_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/font_medium"
+            android:text="Active"
+            android:textColor="@color/green"
+            android:textSize="11sp" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
